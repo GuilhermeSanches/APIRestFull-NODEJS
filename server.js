@@ -2,6 +2,15 @@
 //  OpenShift sample Node application
 var express = require('express');
 var fs      = require('fs');
+var debug = require('debug')('api');
+var app = require('../app');
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
+
 
 
 /**
@@ -102,7 +111,7 @@ var SampleApp = function() {
 
         self.routes['/'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
-            res.send(self.cache_get('index.html') );
+            res.send(self.cache_get('/angular/index.html') );
         };
     };
 
