@@ -1,0 +1,27 @@
+<div class="col-md-12">
+<div class="row">
+	<h2 class="text-center"><u>Viagens</u></h2>
+</div>
+<div class="row">
+</div>
+<br/>
+<div class="row">
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Pais</td>
+
+		</tr>
+	</thead>
+	
+	<tbody>
+        {{viagens}}
+		<tr ng-repeat="viagem in viagens | orderBy: '+pais'">
+		<td>{{viagem.id}}</td>
+		<td>{{viagem.pais}}</td>	
+		</tr>
+	</tbody>
+</table>	
+</div>
+</div>
