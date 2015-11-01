@@ -38,7 +38,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(
     connection(mysql,{
-        host: 'process.env.OPENSHIFT_NODEJS_IP',
+        host: process.env.OPENSHIFT_MYSQL_DB_HOST,
         user: 'admintcHGzPm',
         password : 'lyJnKihB1AV1',        
         database:'my'
