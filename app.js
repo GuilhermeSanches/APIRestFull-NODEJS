@@ -38,10 +38,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(
     connection(mysql,{
-        host: 'localhost',
-        user: 'root',
-        password : '',        
-        database:'api'
+        host: 'process.env.OPENSHIFT_NODEJS_IP',
+        user: 'admintcHGzPm',
+        password : 'lyJnKihB1AV1',        
+        database:'my'
     },'request')
 );
 
