@@ -34,4 +34,4 @@ App.config(function($routeProvider){
     })
 });
 
-App.value('API', 'http://my-travelmanager.rhcloud.com:8080/');
+App.value('API', 'http://localhost:8080/');
