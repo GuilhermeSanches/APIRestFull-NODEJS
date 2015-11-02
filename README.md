@@ -1,4 +1,4 @@
-API RestFull - NodeJS
+API RestFull - NodeJS -- @Author: Guilherme Sanches / Jéssica Adriele do Nascimento
 
 Start Project in bin/www.js
 
