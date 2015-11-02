@@ -1,8 +1,10 @@
 API RestFull - NodeJS -- @Author: Guilherme Sanches / Jéssica Adriele do Nascimento
 
+Config database settings in app.js line 39.
+
 Start Project in bin/www.js
 
-URL's -> 
+URL's -> GET VIAGENS => localhost:8080/viagens
 
 The OpenShift `nodejs` cartridge documentation can be found at:
 
